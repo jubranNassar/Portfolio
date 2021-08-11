@@ -51,7 +51,6 @@
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -70,11 +69,11 @@
 
 - Desktop View
 
-![Imgur](https://imgur.com/Ik1Jxrz.png)
+![Imgur](https://imgur.com/7KluIZE.png)
 
 - Mobile View
 
-![Imgur](https://imgur.com/DyzFHo6.png)
+![Imgur](https://imgur.com/7oSBQgh.png)
 
 
 #### Component Tree
@@ -120,25 +119,15 @@ src
 | TOTAL | 25H|hrs|   
 
 
-<br>
-
 ### Server (Back End)
 
 #### ERD Model
 
-![Imgur](https://imgur.com/QyV9gWn.png)
-
-***
-
-## Post-MVP
-
-- Add more Projects
-- Advance my CSS
+![Imgur](https://imgur.com/cPcDrW8.png)
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
