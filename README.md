@@ -53,12 +53,12 @@
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | npm i react |
-|   React Router   | npm i react-router-dom |
-| AOS |   npm install aos --save |
-| Axios | npm i axios |
-|  JWT  | gem jwt |
-| Bcrypt| gem bcrypt |
+|      React       | import and use essential react hooks such a useState and useEffect   |
+|   React Router   | import and use Link and Route and useHistory to redirect to different pages |
+| AOS | add nice animation and effects on scroll throughout the page |
+| Axios | make axios calls to the backend |
+|  JWT  | used for authentication and validation |
+| Bcrypt| used for encrypting passwords |
 
 <br>
 
