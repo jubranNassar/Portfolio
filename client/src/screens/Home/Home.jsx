@@ -7,6 +7,7 @@ import { useState } from "react"
 import { login, logout } from "../../services/user"
 import { useHistory } from "react-router-dom";
 import { Route } from "react-router-dom";
+import Landing from "../../components/Landing/Landing.jsx";
 
 export default function Home() {
   const [user, setUser] = useState(null)
@@ -37,6 +38,7 @@ export default function Home() {
     <Route exact path="/login">
     <Login handleLogin={handleLogin} loginForm={loginForm} setLoginForm={setLoginForm}/>
     </Route>
+    <Landing/>
     <AboutMe />
     <Projects />
     <Contact />
