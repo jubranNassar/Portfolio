@@ -28,11 +28,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/verify
-  def verify
-    render json: @current_user.attributes.except('password_digest'), status: :ok
-  end
-
   private
 
   def user_register_params
