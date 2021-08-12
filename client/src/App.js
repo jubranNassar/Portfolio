@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Nav user={user} handleLogout={handleLogout} />
       <Route exact path="/">
-        <Home />
+        <Home user={user}/>
       </Route>
 
       <Route exact path="/login">

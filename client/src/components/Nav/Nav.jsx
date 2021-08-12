@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import Home from "../../screens/Home/Home";
+
 
 export default function Nav(props) {
   const alwaysOption = (
