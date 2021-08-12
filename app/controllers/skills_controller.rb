@@ -1,5 +1,5 @@
 class SkillsController < ApplicationController
   def index
-    Skill.all
+    render json: Skill.all
   end
 end

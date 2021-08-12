@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+  before_action :get_project, only: %i[show update destroy]
+  # before_action :authorize_request, only: %i[create update destroy]
+
   def index
     projects = Project.all
     render json: projects
@@ -36,7 +39,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :image, :github_url, :deployed_url, :description)
+    params.require(:project).permit(:name, :image, :github_url, :deployed_url, :description, :user_id)
   end
 
   def get_project
