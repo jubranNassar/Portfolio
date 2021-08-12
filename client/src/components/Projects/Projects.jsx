@@ -12,10 +12,10 @@ export default function Projects() {
     fetchProjects();
   }, [])
   return (
-  <div>
+  <div id="my-projects">
     <h1>My Projects</h1>
     {projects.map((project)=>(
-      <img src={project.image}/>
+      <img key={project.name} src={project.image} alt={project.name}/>
     ))}
   </div>
   )

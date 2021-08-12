@@ -9,6 +9,7 @@ export default function Nav(props) {
       <a
         href="https://docs.google.com/document/d/1mYJ4KEgJGJ_vJo45s8y8wL2pMlsgS3sHG28qs-HSZqw/edit#"
         target="_blank"
+        rel="noreferrer"
       >
         Resume
       </a>
