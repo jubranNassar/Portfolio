@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import { getOneProject, updateProject } from "../../services/projects"
+import { getOneProject, updateProject, deleteProject } from "../../services/projects"
 
 export default function EditProject({user}) {
   const [formData, setFormData] = useState({
@@ -36,6 +36,12 @@ export default function EditProject({user}) {
     const updatedProject = await updateProject(id, formData);
     history.push("/");
   };
+
+  const handleDelete = async(e)=> {
+    e.preventDefault()
+    await deleteProject(id)
+    history.push("/")
+  }
 
   return (
     <div>
@@ -87,6 +93,7 @@ export default function EditProject({user}) {
 
         <button type="submit">Submit</button>
       </form>
+        <button onClick={(e)=>handleDelete(e)} type="subit">Delete Project</button>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export const getOneProject = async(projectID) => {
 }
 
 export const deleteProject = async (projectID) => {
-  await api.delete(`/project/${projectID}`)
+  await api.delete(`/projects/${projectID}`)
 }
 
 export const addProject = async (projectData)=> {
