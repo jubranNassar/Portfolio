@@ -10,6 +10,15 @@ export const login = async (userData) => {
   }
 };
 
+export const verify = async () => {
+  const token = localStorage.getItem('authToken')
+  if (token) {
+    api.defaults.headers.common.authorization = `Bearer ${token}`
+    const res = await api.get("/users/verify")
+    return res.data
+  }
+}
+
 
 export const logout = () => {
   localStorage.removeItem("authToken");

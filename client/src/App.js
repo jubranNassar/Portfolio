@@ -7,6 +7,9 @@ import AddProject from "./screens/AddProject/AddProject.jsx";
 import "./App.css";
 import Home from "./screens/Home/Home.jsx";
 import EditProject from "./screens/EditProject/EditProject.jsx";
+
+import { useEffect } from "react"
+import { verify } from "./services/user"
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -21,6 +24,13 @@ function App() {
     setUser(user);
     history.push("/");
   };
+    useEffect(() => {
+      const reverify = async () => {
+        const currentUser = await verify()
+        setUser(currentUser)
+      }
+      reverify()
+    },[])
 
   const handleLogout = () => {
     logout();
@@ -44,10 +54,10 @@ function App() {
       </Route>
 
       <Route exact path="/add">
-        <AddProject user={user} />
+        <AddProject setUser={setUser} user={user} />
       </Route>
       <Route exact path="/edit/:id">
-        <EditProject user={user}/>
+        <EditProject user={user} setUser={setUser}/>
       </Route>
     </div>
   );

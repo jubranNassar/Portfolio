@@ -9,7 +9,7 @@ export default function EditProject({user}) {
     github_url: "",
     deployed_url: "",
     description: "",
-    user_id: user.id,
+    user_id: user?.id,
   });
   const history = useHistory();
   const { id } = useParams();
@@ -33,7 +33,7 @@ export default function EditProject({user}) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const updatedProject = await updateProject(id, formData);
+    await updateProject(id, formData);
     history.push("/");
   };
 

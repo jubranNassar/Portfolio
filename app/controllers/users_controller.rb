@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authorize_request, only: [:verify]
+
   def create
     user = User.new(user_register_params)
     if user.save
@@ -26,6 +28,10 @@ class UsersController < ApplicationController
     else
       render json: { error: 'unauthorized' }, status: :unauthorized
     end
+  end
+
+  def verify
+    render json: @current_user.attributes.except('password_digest'), status: :ok
   end
 
   private

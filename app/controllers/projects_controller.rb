@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :get_project, only: %i[show update destroy]
-  # before_action :authorize_request, only: %i[create update destroy]
+  before_action :authorize_request, only: %i[create update destroy]
 
   def index
     projects = Project.all

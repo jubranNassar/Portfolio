@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { addProject } from "../../services/projects";
+import { verify } from "../../services/user";
+
 
 export default function AddProject({ user }) {
   const [formData, setFormData] = useState({
@@ -9,7 +11,7 @@ export default function AddProject({ user }) {
     github_url: "",
     deployed_url: "",
     description: "",
-    user_id: user.id,
+    user_id: user?.id,
   });
 
 
