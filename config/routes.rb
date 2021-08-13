@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users, only: [:create]
   resources :projects
   resources :skills
+  resources :contacts
 end

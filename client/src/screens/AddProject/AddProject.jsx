@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { addProject } from "../../services/projects";
-import { verify } from "../../services/user";
 
 
 export default function AddProject({ user }) {
@@ -33,7 +32,7 @@ export default function AddProject({ user }) {
   };
 
 
-  return (
+  return(
     <div>
       <h1>Add Project</h1>
       <form onSubmit={(e) => handleSubmit(e)}>
