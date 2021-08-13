@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 
-export default function ProjectButtons({deployedURL, githubURL, user}) {
+export default function ProjectButtons({deployedURL, githubURL, user, projectID}) {
 
   const alwaysVisible = (
     <>
@@ -17,7 +17,7 @@ export default function ProjectButtons({deployedURL, githubURL, user}) {
 
   const loggedIn = (
     <>
-    <Link to="/edit">
+    <Link to={`/edit/${projectID}`}>
       <button>Edit</button>
     </Link>
     </>

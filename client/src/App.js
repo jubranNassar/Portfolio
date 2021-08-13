@@ -6,6 +6,7 @@ import { Route, useHistory } from "react-router-dom";
 import AddProject from "./screens/AddProject/AddProject.jsx";
 import "./App.css";
 import Home from "./screens/Home/Home.jsx";
+import EditProject from "./screens/EditProject/EditProject.jsx";
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -44,6 +45,9 @@ function App() {
 
       <Route exact path="/add">
         <AddProject user={user} />
+      </Route>
+      <Route exact path="/edit/:id">
+        <EditProject user={user}/>
       </Route>
     </div>
   );
