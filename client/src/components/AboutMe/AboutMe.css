@@ -1,27 +1,46 @@
 #about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  margin: 50px;
   color: white;
 }
 .about-me {
   display: flex;
   justify-content: flex-start;
   padding-left: 50px;
+  padding-bottom: 20px;
   font-size: 72px;
+}
+
+.brand-statement-outer {
+  margin: 50px;
 }
 .brand-statement {
   padding-left: 50px;
   width: 50vw;
   font-size: 36px;
 }
+
+.skills-outer {
+  width: 90vw;
+  margin: 50px;
+}
 .my-skills {
   font-size: 72px;
   padding-left: 50px;
+  padding-bottom: 20px;
 }
 .skills {
-  width: 150px;
+  width: 140px;
+  margin: 8px;
 }
 
 .skills-container {
+  width: 100vw;
   padding-left: 50px;
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }

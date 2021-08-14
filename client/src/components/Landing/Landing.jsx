@@ -7,7 +7,7 @@ export default function Landing() {
         Hi, my name is Jubran. <br />
         I'm a Software
         <br />
-        Engineer
+        Engineer.
       </h1>
     </div>
   );
