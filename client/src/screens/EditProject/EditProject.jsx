@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
-import { getOneProject, updateProject, deleteProject } from "../../services/projects"
+import {
+  getOneProject,
+  updateProject,
+  deleteProject,
+} from "../../services/projects";
 
-export default function EditProject({user}) {
+export default function EditProject({ user }) {
   const [formData, setFormData] = useState({
     name: "",
     image_url: "",
@@ -17,7 +21,7 @@ export default function EditProject({user}) {
   useEffect(() => {
     const fetchProject = async () => {
       const project = await getOneProject(id);
-      setFormData({...project});
+      setFormData({ ...project });
     };
     fetchProject();
   }, [id]);
@@ -37,11 +41,11 @@ export default function EditProject({user}) {
     history.push("/");
   };
 
-  const handleDelete = async(e)=> {
-    e.preventDefault()
-    await deleteProject(id)
-    history.push("/")
-  }
+  const handleDelete = async (e) => {
+    e.preventDefault();
+    await deleteProject(id);
+    history.push("/");
+  };
 
   return (
     <div>
@@ -93,7 +97,9 @@ export default function EditProject({user}) {
 
         <button type="submit">Submit</button>
       </form>
-        <button onClick={(e)=>handleDelete(e)} type="subit">Delete Project</button>
+      <button onClick={(e) => handleDelete(e)} type="submit">
+        Delete Project
+      </button>
     </div>
   );
 }

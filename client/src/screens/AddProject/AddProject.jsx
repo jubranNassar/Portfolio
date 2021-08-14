@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { addProject } from "../../services/projects";
-
 
 export default function AddProject({ user }) {
   const [formData, setFormData] = useState({
@@ -13,7 +12,6 @@ export default function AddProject({ user }) {
     user_id: user?.id,
   });
 
-
   const history = useHistory();
 
   const handleChange = (e) => {
@@ -21,7 +19,7 @@ export default function AddProject({ user }) {
     setFormData({
       ...formData,
       [name]: value,
-      user_id: user.id
+      user_id: user.id,
     });
   };
 
@@ -31,8 +29,7 @@ export default function AddProject({ user }) {
     history.push("/");
   };
 
-
-  return(
+  return (
     <div>
       <h1>Add Project</h1>
       <form onSubmit={(e) => handleSubmit(e)}>

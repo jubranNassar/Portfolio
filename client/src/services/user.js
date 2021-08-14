@@ -1,4 +1,4 @@
-import api from "./apiConfig"
+import api from "./apiConfig";
 
 export const login = async (userData) => {
   const res = await api.post("/users/login", { user: userData });
@@ -11,14 +11,13 @@ export const login = async (userData) => {
 };
 
 export const verify = async () => {
-  const token = localStorage.getItem('authToken')
+  const token = localStorage.getItem("authToken");
   if (token) {
-    api.defaults.headers.common.authorization = `Bearer ${token}`
-    const res = await api.get("/users/verify")
-    return res.data
+    api.defaults.headers.common.authorization = `Bearer ${token}`;
+    const res = await api.get("/users/verify");
+    return res.data;
   }
-}
-
+};
 
 export const logout = () => {
   localStorage.removeItem("authToken");

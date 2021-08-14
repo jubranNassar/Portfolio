@@ -1,16 +1,11 @@
-
-
-
-export default function Login({handleLogin, loginForm, setLoginForm}) {
+export default function Login({ handleLogin, loginForm, setLoginForm }) {
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setLoginForm(prevFormData => (
-      {
-        ...prevFormData,
-        [name]: value
-      }
-    ))
-  }
+    const { name, value } = e.target;
+    setLoginForm((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
   return (
     <div>
       <h1>Login</h1>
@@ -32,5 +27,5 @@ export default function Login({handleLogin, loginForm, setLoginForm}) {
         <button type="submit">Submit</button>
       </form>
     </div>
-  )
+  );
 }

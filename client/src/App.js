@@ -8,8 +8,8 @@ import "./App.css";
 import Home from "./screens/Home/Home.jsx";
 import EditProject from "./screens/EditProject/EditProject.jsx";
 
-import { useEffect } from "react"
-import { verify } from "./services/user"
+import { useEffect } from "react";
+import { verify } from "./services/user";
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -24,13 +24,13 @@ function App() {
     setUser(user);
     history.push("/");
   };
-    useEffect(() => {
-      const reverify = async () => {
-        const currentUser = await verify()
-        setUser(currentUser)
-      }
-      reverify()
-    },[])
+  useEffect(() => {
+    const reverify = async () => {
+      const currentUser = await verify();
+      setUser(currentUser);
+    };
+    reverify();
+  }, []);
 
   const handleLogout = () => {
     logout();
@@ -42,7 +42,7 @@ function App() {
     <div className="App">
       <Nav user={user} handleLogout={handleLogout} />
       <Route exact path="/">
-        <Home user={user}/>
+        <Home user={user} />
       </Route>
 
       <Route exact path="/login">
@@ -57,7 +57,7 @@ function App() {
         <AddProject setUser={setUser} user={user} />
       </Route>
       <Route exact path="/edit/:id">
-        <EditProject user={user} setUser={setUser}/>
+        <EditProject user={user} setUser={setUser} />
       </Route>
     </div>
   );

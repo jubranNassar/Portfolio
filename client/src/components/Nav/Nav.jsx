@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 export default function Nav(props) {
   const alwaysOption = (
     <>
@@ -27,6 +26,10 @@ export default function Nav(props) {
       <button onClick={props.handleLogout}>Logout</button>
     </>
   );
-  return <div>{alwaysOption}
-    {props.user ? authenticated : unauthenticated}</div>;
+  return (
+    <div>
+      {alwaysOption}
+      {props.user ? authenticated : unauthenticated}
+    </div>
+  );
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router";
 import { createMessage } from "../../services/contacts";
 
@@ -7,8 +7,6 @@ export default function Contact() {
     email: "",
     message: "",
   });
-
-  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +19,6 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.prevent.default();
     await createMessage(contact);
-    history.push("/");
   };
 
   return (
@@ -44,7 +41,7 @@ export default function Contact() {
           type="text"
           value={contact.message}
         />
-        <button type="submit">Send!</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   );
