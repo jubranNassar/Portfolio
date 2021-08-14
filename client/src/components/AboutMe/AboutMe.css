@@ -1,0 +1,27 @@
+#about-me{
+  color: white;
+}
+.about-me {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 50px;
+  font-size: 72px;
+}
+.brand-statement {
+  padding-left: 50px;
+  width: 50vw;
+  font-size: 36px;
+}
+.my-skills {
+  font-size: 72px;
+  padding-left: 50px;
+}
+.skills {
+  width: 150px;
+}
+
+.skills-container {
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
