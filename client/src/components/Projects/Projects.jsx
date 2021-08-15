@@ -1,6 +1,7 @@
 import { getAllProjects } from "../../services/projects";
 import { useState, useEffect } from "react";
 import ProjectButtons from "../ProjectButtons/ProjectButtons";
+import "./Projects.css";
 
 export default function Projects({ user }) {
   const [projects, setProjects] = useState([]);
@@ -13,11 +14,12 @@ export default function Projects({ user }) {
     fetchProjects();
   }, []);
   return (
-    <div id="my-projects">
-      <h1>My Projects</h1>
+    <div id="projects">
+      <h1 className="projects-title">My Projects</h1>
+      <div id="my-projects">
       {projects.map((project) => (
-        <div key={project.id}>
-          <img src={project.image} alt={project.name} />
+        <div className="project" key={project.id}>
+          <img className="project-img" src={project.image} alt={project.name} />
           <ProjectButtons
             deployedURL={project.deployed_url}
             githubURL={project.github_url}
@@ -26,6 +28,8 @@ export default function Projects({ user }) {
           />
         </div>
       ))}
+
+      </div>
     </div>
   );
 }
