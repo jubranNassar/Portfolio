@@ -9,7 +9,7 @@ import {
 export default function EditProject({ user }) {
   const [formData, setFormData] = useState({
     name: "",
-    image_url: "",
+    image: "",
     github_url: "",
     deployed_url: "",
     description: "",
@@ -63,7 +63,7 @@ export default function EditProject({ user }) {
         <input
           onChange={(e) => handleChange(e)}
           id="img"
-          name="image_url"
+          name="image"
           type="text"
           value={formData.image}
         />

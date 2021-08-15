@@ -5,7 +5,7 @@ import { addProject } from "../../services/projects";
 export default function AddProject({ user }) {
   const [formData, setFormData] = useState({
     name: "",
-    image_url: "",
+    image: "",
     github_url: "",
     deployed_url: "",
     description: "",
@@ -45,9 +45,9 @@ export default function AddProject({ user }) {
         <input
           onChange={(e) => handleChange(e)}
           id="img"
-          name="image_url"
+          name="image"
           type="text"
-          value={formData.image_url}
+          value={formData.image}
         />
         <label htmlFor="gh-url">github URL</label>
         <input

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router";
 import { createMessage } from "../../services/contacts";
+import "./Contact.css";
 
 export default function Contact() {
   const [contact, setContact] = useState({
@@ -22,7 +23,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div id="contact">
       <h1>Contact Me</h1>
       <form onSubmit={(e) => handleSubmit(e)}>
         <label htmlFor="email">Email</label>

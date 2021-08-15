@@ -28,7 +28,6 @@ export default function Projects({ user }) {
           />
         </div>
       ))}
-
       </div>
     </div>
   );

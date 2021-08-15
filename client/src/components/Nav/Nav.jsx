@@ -5,7 +5,7 @@ export default function Nav(props) {
   const alwaysOption = (
     <>
       <a  className="links"href="#about-me">About Me</a>
-      <a  className="links"href="#my-projects">My Projects</a>
+      <a  className="links"href="#projects">My Projects</a>
       <a className="links"
         href="https://docs.google.com/document/d/1mYJ4KEgJGJ_vJo45s8y8wL2pMlsgS3sHG28qs-HSZqw/edit#"
         target="_blank"
