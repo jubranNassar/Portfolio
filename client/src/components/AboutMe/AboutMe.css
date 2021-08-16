@@ -46,3 +46,51 @@
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
+
+@media only screen and (max-width: 375px) {
+
+  #about-me {
+    justify-content: space-between;
+    height: 93vh;
+  }
+
+
+  .about-me {
+    font-size: 50px;
+    justify-self: center;
+  }
+
+  .brand-statement {
+    display: flex;
+    font-size: 20px;
+    width: 65vw;
+  }
+  
+  .brand-statement-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .skills-outer {
+    margin: 0;
+  }
+
+  .my-skills {
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+  }
+
+  .skills {
+    width: 40px;
+    margin-bottom: 8px;
+  }
+
+  .skills-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+}
