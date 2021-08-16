@@ -3,6 +3,8 @@
   flex-direction: column;
   color: white;
   font-size: 46px;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .login-form {
@@ -31,4 +33,21 @@
 
 .login-label {
   margin: 15px 0;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .login-title {
+    margin-top: 80px;
+    padding: 0;
+    font-size: 50px;
+  }
+
+  .login {
+    margin: 0;
+    width:20vw;
+    font-size: 20px;
+  }
+
+
 }
