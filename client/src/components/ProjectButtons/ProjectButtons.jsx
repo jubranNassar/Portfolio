@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./ProjectButtons.css"
 
 export default function ProjectButtons({
   deployedURL,
@@ -9,11 +10,11 @@ export default function ProjectButtons({
   const alwaysVisible = (
     <>
       <Link to={{ pathname: deployedURL }} target="_blank">
-        <button>See the app</button>
+        <button className="button">See the app</button>
       </Link>
 
       <Link to={{ pathname: githubURL }} target="_blank">
-        <button>See the code</button>
+        <button className="button">See the code</button>
       </Link>
     </>
   );
@@ -21,7 +22,7 @@ export default function ProjectButtons({
   const loggedIn = (
     <>
       <Link to={`/edit/${projectID}`}>
-        <button>Edit</button>
+        <button className="button">Edit</button>
       </Link>
     </>
   );
