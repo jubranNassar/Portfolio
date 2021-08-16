@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useHistory } from "react-router";
 import { createMessage } from "../../services/contacts";
 import "./Contact.css";
 

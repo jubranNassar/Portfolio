@@ -5,7 +5,7 @@ export default function Nav(props) {
   const alwaysOption = (
     <>
       <a href="#landing">
-        <img src="https://imgur.com/buzW4tI.png"/>
+        <img src="https://imgur.com/buzW4tI.png" alt="Home"/>
       </a>
       <a  className="links"href="#about-me">About Me</a>
       <a  className="links"href="#projects">My Projects</a>
