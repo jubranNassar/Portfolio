@@ -1,0 +1,51 @@
+.edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+}
+
+#desc {
+  resize:none;
+  height: 15vh;
+}
+
+
+.edit-title {
+  display: flex;
+  align-self: center;
+  font-size: 100px;
+  margin-top: 8vh;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+.edit-label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.edit-input {
+  width: 45vw;
+  margin: 6px;
+  padding-left: 2px;
+}
+
+
+.edit-label {
+  margin: 5px 0;
+  margin-left: 10px;
+}
+
+
+.edit-button {
+  display: flex;
+  align-self: center;
+}
