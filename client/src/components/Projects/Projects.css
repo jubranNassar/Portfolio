@@ -44,3 +44,30 @@
   text-align: center;
   margin-top: 1vh;
 }
+
+
+@media only screen and (max-width: 375px) {
+  #projects {
+    padding-top: 55px;
+    margin: 0;
+  }
+
+  .projects-title {
+    font-size: 50px;
+  }
+
+
+  .project-img {
+    width: 60vw;
+    justify-self: center;
+  }
+
+  .buttons {
+    font-size: 10px;
+  }
+
+  .project {
+    width: 60vw;
+  }
+
+}

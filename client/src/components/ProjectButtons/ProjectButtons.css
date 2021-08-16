@@ -12,3 +12,10 @@
   background-position: bottom right;
   color: white
 }
+
+
+@media only screen and (max-width: 375px) {
+  .button {
+    font-size: 15px;
+  }
+}
