@@ -4,6 +4,9 @@ import "./Nav.css"
 export default function Nav(props) {
   const alwaysOption = (
     <>
+      <a href="#landing">
+        <img src="https://imgur.com/ksOGyGU.png"/>
+      </a>
       <a  className="links"href="#about-me">About Me</a>
       <a  className="links"href="#projects">My Projects</a>
       <a className="links"

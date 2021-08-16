@@ -2,7 +2,7 @@ import "./Landing.css"
 
 export default function Landing() {
   return (
-    <div className="landing">
+    <div id="landing">
       <h1>
         Hi, my name is Jubran. <br />
         I'm a Software
