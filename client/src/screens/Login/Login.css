@@ -15,8 +15,7 @@
 
 .login-title {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 10vw;
+  justify-content: center;
   padding-bottom: 20px;
   margin-top:10vh;
   font-size: 100px;
