@@ -10,12 +10,11 @@
 
 .contact-me {
   display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-  margin-left: 10vw;
-  padding-bottom: 20px;
-  margin-top: 15vh;
-  font-size: 72px;
+  justify-content:center;
+  margin: 7vh 5vw;
+  margin-bottom: 6vh;
+  font-size: 6rem;
+  width: 70vw;
 }
 
 .form {

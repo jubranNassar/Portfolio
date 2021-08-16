@@ -3,20 +3,24 @@
   flex-direction: column;
   justify-content: space-around;
   height: 100vh;
-  margin: 50px;
+  margin: 5vw;
   color: white;
 }
+
+
 .about-me {
   display: flex;
   justify-content: flex-start;
   margin: 9vh 5vw;
-
   font-size: 7rem;
 }
 
+
 .brand-statement-outer {
-  margin: 50px;
+  margin: 5vh;
 }
+
+
 .brand-statement {
   margin-left: 5vw;
   width: 50vw;

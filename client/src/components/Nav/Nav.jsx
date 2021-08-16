@@ -4,11 +4,11 @@ import "./Nav.css"
 export default function Nav(props) {
   const alwaysOption = (
     <>
-      <a href="#landing">
+      <a href="/#landing">
         <img src="https://imgur.com/buzW4tI.png" alt="Home"/>
       </a>
-      <a  className="links"href="#about-me">About Me</a>
-      <a  className="links"href="#projects">My Projects</a>
+      <a  className="links"href="/#about-me">About Me</a>
+      <a  className="links"href="/#projects">My Projects</a>
       <a className="links"
         href="https://docs.google.com/document/d/1mYJ4KEgJGJ_vJo45s8y8wL2pMlsgS3sHG28qs-HSZqw/edit#"
         target="_blank"
@@ -16,7 +16,7 @@ export default function Nav(props) {
       >
         Resume
       </a>
-      <a className="links" href="#contact">Contact Me</a>
+      <a className="links" href="/#contact">Contact Me</a>
     </>
   );
   const unauthenticated = (

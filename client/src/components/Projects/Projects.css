@@ -4,8 +4,8 @@
   align-items: center;
   height: 100vh;
   color: white;
-  padding-top: 50px;
-  margin: 50px;
+  padding-top: 7vh;
+  margin: 5vw;
 }
 
 
@@ -21,25 +21,26 @@
 
 .projects-title {
   display: flex;
-  align-self: flex-start;
-  margin-left: 5vw;
-  padding-bottom: 20px;
-  font-size: 72px;
+  justify-content: flex-start;
+  margin: 0 5vw;
+  margin-bottom: 6vh;
+  font-size: 6rem;
+  width: 70vw;
 }
 
 .project-img {
-  width: 25vw;
+  width: 24vw;
   z-index: 1;
 }
 
 
 .project {
-  padding: 20px;
-  margin: 15px;
-  padding-bottom: 10px;
+  padding: 2vh;
+  margin: 1vh;
+  padding-bottom: 1vh;
   background-color: rgba(115, 2, 2, 0.3);
 }
 .buttons {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1vh;
 }
