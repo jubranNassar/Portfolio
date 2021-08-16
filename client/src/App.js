@@ -44,7 +44,6 @@ function App() {
       <Route exact path="/">
         <Home user={user} />
       </Route>
-
       <Route exact path="/login">
         <Login
           handleLogin={handleLogin}

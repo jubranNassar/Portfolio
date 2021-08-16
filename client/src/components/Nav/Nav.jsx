@@ -31,9 +31,9 @@ export default function Nav(props) {
     </>
   );
   return (
-    <div className="nav">
+    <header className="nav">
       {alwaysOption}
       {props.user ? authenticated : unauthenticated}
-    </div>
+    </header>
   );
 }

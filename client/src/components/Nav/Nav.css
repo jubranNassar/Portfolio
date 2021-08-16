@@ -4,10 +4,10 @@
   font-size: 30px;
   position: fixed;
   width: 100vw;
+  height: 5vh;
   background-color: black;
-  margin-top: -20px;
+  top: 0;
 }
-
 
 
 
