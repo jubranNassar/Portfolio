@@ -6,5 +6,17 @@
   margin-top: 20px;
   margin-left: 70px;
   color: white;
-  font-size: 100px;
+  font-size: 6.25rem;
+}
+
+@media only screen and (max-width: 375px) {
+  #landing {
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .intro {
+    font-size: 50px;
+    margin-left: 15px;
+  }
 }
