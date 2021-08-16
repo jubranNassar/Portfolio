@@ -9,16 +9,16 @@
 .about-me {
   display: flex;
   justify-content: flex-start;
-  padding-left: 50px;
-  padding-bottom: 20px;
-  font-size: 72px;
+  margin: 9vh 5vw;
+
+  font-size: 7rem;
 }
 
 .brand-statement-outer {
   margin: 50px;
 }
 .brand-statement {
-  padding-left: 50px;
+  margin-left: 5vw;
   width: 50vw;
   font-size: 36px;
 }
@@ -28,17 +28,16 @@
   margin: 50px;
 }
 .my-skills {
-  font-size: 72px;
-  padding-left: 50px;
-  padding-bottom: 20px;
+  font-size: 5rem;
+  margin: 4vh 5vw;
 }
 .skills {
-  width: 136px;
-  margin: 8px;
+  width: 6vw;
+  margin: .4vw;
 }
 
 .skills-container {
-  padding-left: 50px;
+  margin-left: 5vw;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
