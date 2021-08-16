@@ -2,6 +2,7 @@ import AboutMe from "../../components/AboutMe/AboutMe.jsx";
 import Projects from "../../components/Projects/Projects.jsx";
 import Contact from "../../components/Contact/Contact.jsx";
 import Landing from "../../components/Landing/Landing.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import "./Home.css"
 
 export default function Home({ user }) {
@@ -11,6 +12,7 @@ export default function Home({ user }) {
       <AboutMe />
       <Projects user={user} />
       <Contact />
+      <Footer />
     </div>
   );
 }
