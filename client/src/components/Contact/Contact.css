@@ -8,7 +8,7 @@
   font-size: 46px;
 }
 
-.contact-me {
+#contact-me {
   display: flex;
   justify-content:center;
   margin: 7vh 5vw;
@@ -46,4 +46,25 @@
 
 .label-input {
   margin: 20px;
+}
+
+
+@media only screen and (max-width: 375px) {
+  #contact {
+    margin-top: 50px;
+    font-size: 36px;
+  }
+
+  #contact-me {
+    font-size: 50px;
+  }
+
+  .inputs {
+    width: 75vw;
+  }
+  
+  .labels {
+    font-size: 25px;
+  }
+
 }

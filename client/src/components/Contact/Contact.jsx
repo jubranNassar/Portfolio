@@ -23,7 +23,7 @@ export default function Contact() {
 
   return (
     <div data-aos="fade-down" id="contact">
-      <h1 className="contact-me">Contact Me</h1>
+      <h1 id="contact-me">Contact Me</h1>
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         <div className="label-input">
         <label className="labels" htmlFor="email">Email</label>
