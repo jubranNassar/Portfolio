@@ -1,0 +1,35 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 46px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.login-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10vw;
+  padding-bottom: 20px;
+  margin-top:10vh;
+  font-size: 100px;
+}
+
+
+.login-label-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+
+.login-label {
+  margin: 15px 0;
+}
