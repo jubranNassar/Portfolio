@@ -14,7 +14,7 @@ export default function ProjectButtons({
       </Link>
 
       <Link to={{ pathname: githubURL }} target="_blank">
-        <button className="button">See the code</button>
+        <button onClick={console.log("HELLOO")} className="button">See the code</button>
       </Link>
     </>
   );

@@ -14,7 +14,7 @@ export default function Projects({ user }) {
     fetchProjects();
   }, []);
   return (
-    <div data-aos="fade-left" id="projects">
+    <div id="projects">
       <h1 className="projects-title">My Projects</h1>
       <div id="my-projects">
       {projects.map((project) => (

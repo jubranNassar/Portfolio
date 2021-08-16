@@ -25,19 +25,19 @@
   margin-left: 5vw;
   padding-bottom: 20px;
   font-size: 72px;
- 
 }
 
 .project-img {
   width: 25vw;
+  z-index: 1;
 }
 
 
 .project {
-  border: 1px solid white;
   padding: 20px;
   margin: 15px;
   padding-bottom: 10px;
+  background-color: rgba(115, 2, 2, 0.3);
 }
 .buttons {
   text-align: center;
