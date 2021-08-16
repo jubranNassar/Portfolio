@@ -27,8 +27,8 @@ export default function ProjectButtons({
   );
   return (
     <div>
-      {user ? loggedIn : null}
       {alwaysVisible}
+      {user ? loggedIn : null}
     </div>
   );
 }

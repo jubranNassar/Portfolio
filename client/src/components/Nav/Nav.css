@@ -1,8 +1,11 @@
 .nav {
-  padding-top: 20px;
   display: flex;
   justify-content: space-evenly;
   font-size: 30px;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  margin-top: -20px;
 }
 
 

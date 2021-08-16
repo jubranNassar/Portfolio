@@ -19,14 +19,18 @@ export default function Projects({ user }) {
       <div id="my-projects">
       {projects.map((project) => (
         <div className="project" key={project.id}>
+          <div className="img-container">
           <img className="project-img" src={project.image} alt={project.name} />
-          <ProjectButtons
+          </div>
+          <div className="buttons-container">
+          <ProjectButtons className="buttons"
             deployedURL={project.deployed_url}
             githubURL={project.github_url}
             user={user}
             projectID={project.id}
           />
-        </div>
+          </div>
+        </div>  
       ))}
       </div>
     </div>
