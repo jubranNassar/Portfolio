@@ -1,3 +1,50 @@
 #contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
   height: 100vh;
+  color: white;
+  font-size: 46px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin-left: 10vw;
+  padding-bottom: 20px;
+  margin-top: 15vh;
+  font-size: 72px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 50vw;
+  height: 50vh;
+}
+
+#message {
+  height: 20vh;
+}
+
+.inputs {
+  background-color:lightgrey;
+  margin: 10px;
+  width: 30vw;
+}
+
+
+.labels {
+  display: flex;
+  justify-content: flex-start;
+  margin: 8px 10px;
+}
+
+.label-input {
+  margin: 20px;
 }

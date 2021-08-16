@@ -21,15 +21,15 @@
 
 .projects-title {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 50px;
+  align-self: flex-start;
+  margin-left: 5vw;
   padding-bottom: 20px;
   font-size: 72px;
-  width: 83vw;
+ 
 }
 
 .project-img {
-  width: 35vw;
+  width: 25vw;
 }
 
 

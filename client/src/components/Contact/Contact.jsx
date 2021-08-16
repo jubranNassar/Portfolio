@@ -24,24 +24,31 @@ export default function Contact() {
 
   return (
     <div id="contact">
-      <h1>Contact Me</h1>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <label htmlFor="email">Email</label>
+      <h1 className="contact-me">Contact Me</h1>
+      <form className="form" onSubmit={(e) => handleSubmit(e)}>
+        <div className="label-input">
+        <label className="labels" htmlFor="email">Email</label>
         <input
           onChange={(e) => handleChange(e)}
           id="email"
           name="email"
           type="email"
           value={contact.email}
+          className="inputs"
         />
-        <label htmlFor="message">Your kind words...</label>
-        <input
+        </div>
+        <div className="label-input">
+        <label className="labels" htmlFor="message">Your kind words...</label>
+        <textarea
           onChange={(e) => handleChange(e)}
           id="message"
           name="message"
           type="text"
           value={contact.message}
+          className="inputs"
+          
         />
+        </div>
         <button type="submit">Send</button>
       </form>
     </div>
