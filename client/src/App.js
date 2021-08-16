@@ -7,9 +7,13 @@ import AddProject from "./screens/AddProject/AddProject.jsx";
 import "./App.css";
 import Home from "./screens/Home/Home.jsx";
 import EditProject from "./screens/EditProject/EditProject.jsx";
-
 import { useEffect } from "react";
 import { verify } from "./services/user";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+
+
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -29,6 +33,7 @@ function App() {
       const currentUser = await verify();
       setUser(currentUser);
     };
+    Aos.init({ duration: 3000 })
     reverify();
   }, []);
 

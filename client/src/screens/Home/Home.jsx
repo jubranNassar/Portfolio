@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer.jsx";
 import "./Home.css"
 
 export default function Home({ user }) {
+
   return (
     <div className="home">
       <Landing />

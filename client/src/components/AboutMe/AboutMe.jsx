@@ -12,7 +12,7 @@ export default function AboutMe() {
     fetchSkills();
   }, []);
   return (
-    <div id="about-me">
+    <div data-aos="fade-left" id="about-me">
       <div className="brand-statement-outer">
         <h1 className="about-me">About Me</h1>
         <div className="brand-statement">
@@ -23,7 +23,7 @@ export default function AboutMe() {
           to learning more.
         </div>
       </div>
-      <div className="skills-outer">
+      <div data-aos="fade-right" className="skills-outer">
         <h1 className="my-skills">My Skills</h1>
         <div className="skills-container">
           {skills?.map((skill) => (
