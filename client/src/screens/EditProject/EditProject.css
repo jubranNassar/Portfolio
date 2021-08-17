@@ -5,6 +5,8 @@
   align-items: center;
   color: white;
   font-size: 36px;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 #desc {
@@ -48,4 +50,28 @@
 .edit-button {
   display: flex;
   align-self: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .edit {
+    font-size: 22px;
+  }
+
+  .edit-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+
+  .edit-input {
+    width: 80vw;
+  }
+
+  .edit-button {
+    margin: 10px;
+    width: 50vw;
+    justify-content: center;
+
+  }
 }
