@@ -15,7 +15,7 @@
   width: 7vw;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 428px) {
   .image {
     width: 20vw;
   }

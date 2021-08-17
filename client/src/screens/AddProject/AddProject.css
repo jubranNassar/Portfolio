@@ -43,7 +43,7 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 428px) {
   .add {
     font-size: 22px;
   }

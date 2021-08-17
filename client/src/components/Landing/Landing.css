@@ -9,7 +9,8 @@
   font-size: 6.25rem;
 }
 
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 428px) {
   #landing {
     margin: 0 auto;
     align-items: center;

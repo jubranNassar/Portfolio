@@ -45,7 +45,7 @@ button.links {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 428px) {
   .nav {
     font-size: 10px;
     height: 50px;
