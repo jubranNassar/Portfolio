@@ -51,7 +51,7 @@ export default function Contact() {
             className="inputs"
           />
         </div>
-        <button type="submit">Send</button>
+        <button className="contact-button" type="submit">Send</button>
       </form>
     </div>
   );

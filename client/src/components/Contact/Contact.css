@@ -29,6 +29,7 @@
 
 #message {
   height: 20vh;
+  font-size: 1.5rem;
 }
 
 .inputs {
@@ -65,6 +66,11 @@
   
   .labels {
     font-size: 25px;
+  }
+
+
+  .contact-button {
+    font-size: 1.5rem;
   }
 
 }
