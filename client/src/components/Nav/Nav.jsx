@@ -21,7 +21,7 @@ export default function Nav(props) {
   );
   const unauthenticated = (
     <>
-      <Link className="links" to="/login">Login</Link>
+      <Link className="links" id="login-button" to="/login">Login</Link>
     </>
   );
   const authenticated = (
