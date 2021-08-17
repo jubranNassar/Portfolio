@@ -6,12 +6,12 @@
   margin-top: 20px;
   margin-left: 70px;
   color: white;
-  font-size: 10rem;
+  font-size: 12rem;
 }
 
 
 .greeting {
-  animation: span 3s forwards;
+  animation: span 3s 1s forwards;
   opacity: 0;
 }
 
@@ -28,9 +28,12 @@
 }
 
 .greeting1 {
-  animation: greeting 3s 1s forwards;
+  animation: greeting 3s 2s forwards;
   opacity: 0;
 }
+
+
+
 
 @keyframes greeting {
   from {
