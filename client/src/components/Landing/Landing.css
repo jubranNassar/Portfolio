@@ -6,8 +6,45 @@
   margin-top: 20px;
   margin-left: 70px;
   color: white;
-  font-size: 6.25rem;
+  font-size: 10rem;
 }
+
+
+.greeting {
+  animation: span 3s forwards;
+  opacity: 0;
+}
+
+@keyframes span {
+  from {
+    opacity: 0;
+  } 
+
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+.greeting1 {
+  animation: greeting 3s 1s forwards;
+  opacity: 0;
+}
+
+@keyframes greeting {
+  from {
+    opacity: 0;
+  } 
+
+
+  to {
+    opacity: 1;
+  }
+  
+}
+
+
 
 
 @media only screen and (max-width: 428px) {
