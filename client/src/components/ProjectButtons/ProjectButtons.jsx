@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ProjectButtons.css"
+import "./ProjectButtons.css";
 
 export default function ProjectButtons({
   deployedURL,

@@ -116,9 +116,15 @@ export default function EditProject({ user }) {
             className="edit-input"
           />
         </div>
-        <button className="edit-button" type="submit">Submit</button>
+        <button className="edit-button" type="submit">
+          Submit
+        </button>
       </form>
-      <button className="edit-button" onClick={(e) => handleDelete(e)} type="submit">
+      <button
+        className="edit-button"
+        onClick={(e) => handleDelete(e)}
+        type="submit"
+      >
         Delete Project
       </button>
     </div>

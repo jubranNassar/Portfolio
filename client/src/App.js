@@ -12,8 +12,6 @@ import { verify } from "./services/user";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
-
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -33,7 +31,7 @@ function App() {
       const currentUser = await verify();
       setUser(currentUser);
     };
-    Aos.init({ duration: 3000 })
+    Aos.init({ duration: 3000 });
     reverify();
   }, []);
 

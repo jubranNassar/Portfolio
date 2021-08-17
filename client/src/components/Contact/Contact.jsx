@@ -26,27 +26,30 @@ export default function Contact() {
       <h1 id="contact-me">Contact Me</h1>
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         <div className="label-input">
-        <label className="labels" htmlFor="email">Email</label>
-        <input
-          onChange={(e) => handleChange(e)}
-          id="email"
-          name="email"
-          type="email"
-          value={contact.email}
-          className="inputs"
-        />
+          <label className="labels" htmlFor="email">
+            Email
+          </label>
+          <input
+            onChange={(e) => handleChange(e)}
+            id="email"
+            name="email"
+            type="email"
+            value={contact.email}
+            className="inputs"
+          />
         </div>
         <div className="label-input">
-        <label className="labels" htmlFor="message">Your kind words...</label>
-        <textarea
-          onChange={(e) => handleChange(e)}
-          id="message"
-          name="message"
-          type="text"
-          value={contact.message}
-          className="inputs"
-          
-        />
+          <label className="labels" htmlFor="message">
+            Your kind words...
+          </label>
+          <textarea
+            onChange={(e) => handleChange(e)}
+            id="message"
+            name="message"
+            type="text"
+            value={contact.message}
+            className="inputs"
+          />
         </div>
         <button type="submit">Send</button>
       </form>
