@@ -3,8 +3,10 @@ body {
   background-color: black;
   background-repeat: repeat;
   background-size: cover;
+
 }
 
 html {
   scroll-behavior:smooth;
+  font-family: 'Playfair Display', serif;
 }
