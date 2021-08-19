@@ -13,15 +13,21 @@
 
 .mail {
   width: 7vw;
-  filter: invert();
+  filter: invert()
 }
 
 @media only screen and (max-width: 428px) {
   .image {
     width: 20vw;
+    filter: none;
   }
 
   .mail {
     width: 28vw;
+    filter: none;
+  }
+
+  .footer {
+    background-color: white;
   }
 }
