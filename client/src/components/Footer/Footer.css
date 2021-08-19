@@ -3,16 +3,17 @@
   align-items: center;
   justify-content: center;
   height: 15vh;
-  background-color: white;
 }
 
 .image {
   width: 5vw;
   margin: 10px;
+  filter: invert();
 }
 
 .mail {
   width: 7vw;
+  filter: invert();
 }
 
 @media only screen and (max-width: 428px) {
