@@ -30,5 +30,6 @@ sql = Skill.create(name:"SQL", image_url: "https://imgur.com/XQQlqqf.png")
 ruby = Skill.create(name: "Ruby", image_url: "https://imgur.com/M5EcPdg.png")
 RoR = Skill.create(name: "Ruby on Rails", image_url: "https://imgur.com/0kCTZWS.png")
 postgresql = Skill.create(name: "postgresql", image_url: "https://imgur.com/Pp0Qdew.png")
+git = Skill.create(name: "git", image_url: "https://imgur.com/vXPRpPG.png")
 
 pp "#{Skill.count} skills created!"
