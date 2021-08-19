@@ -31,7 +31,7 @@ function App() {
       const currentUser = await verify();
       setUser(currentUser);
     };
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 1500 });
     reverify();
   }, []);
 
