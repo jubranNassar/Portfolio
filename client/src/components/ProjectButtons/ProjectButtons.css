@@ -6,8 +6,8 @@
 }
 
 .button:hover {
-    transition: all 0.5s ease;
-  background: linear-gradient(to right, white 50%, #730202 50%);
+  transition: all 0.2s ease-in;
+  background:#730202;
   background-size: 200% 200%;
   background-position: bottom right;
   color: white
