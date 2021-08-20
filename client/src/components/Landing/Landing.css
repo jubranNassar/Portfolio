@@ -11,7 +11,7 @@
 
 
 .greeting {
-  animation: span 3s 1s forwards;
+  animation: span 0.5s 1s forwards;
   opacity: 0;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .greeting1 {
-  animation: greeting 3s 2s forwards;
+  animation: greeting 0.5s 2s forwards;
   opacity: 0;
 }
 
