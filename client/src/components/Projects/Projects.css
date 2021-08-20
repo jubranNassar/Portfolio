@@ -107,6 +107,12 @@
     justify-self: center;
   }
 
+  .image-desc {
+    width: 60vw;
+    height: 11vh;
+    overflow-y: scroll;
+  }
+
   .buttons {
     font-size: 10px;
   }

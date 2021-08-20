@@ -1,17 +1,15 @@
-import Nav from "./components/Nav/Nav.jsx";
-import Login from "./screens/Login/Login.jsx";
-import { useState } from "react";
-import { login, logout } from "./services/user";
+import { useState, useEffect } from "react";
 import { Route, useHistory } from "react-router-dom";
-import AddProject from "./screens/AddProject/AddProject.jsx";
-import "./App.css";
 import Home from "./screens/Home/Home.jsx";
+import Login from "./screens/Login/Login.jsx";
+import AddProject from "./screens/AddProject/AddProject.jsx";
 import EditProject from "./screens/EditProject/EditProject.jsx";
 import Messages from "./screens/Messages/Messages.jsx";
-import { useEffect } from "react";
-import { verify } from "./services/user";
+import Nav from "./components/Nav/Nav.jsx";
+import { login, logout, verify } from "./services/user";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
