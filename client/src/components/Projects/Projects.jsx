@@ -19,11 +19,16 @@ export default function Projects({ user }) {
       <div id="my-projects">
         {projects.map((project) => (
           <div className="project" key={project.id}>
+            <div className="image-and-desc">
+              <div className="image-desc">
+                {project.description}
+              </div>
             <img
               className="project-img"
               src={project.image}
               alt={project.name}
             />
+            </div>
             <div className="buttons">
               <ProjectButtons
                 className="buttons"
