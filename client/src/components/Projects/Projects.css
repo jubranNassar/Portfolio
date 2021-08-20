@@ -24,7 +24,7 @@
   justify-content: flex-start;
   margin: 0 5vw;
   margin-bottom: 6vh;
-  font-size: 6rem;
+  font-size: 4rem;
   width: 70vw;
 }
 
@@ -115,4 +115,10 @@
     width: 60vw;
   }
 
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  .projects-title {
+    font-size: 6rem;
+  }
 }

@@ -5,7 +5,7 @@
   padding-top: 50px;
   height: 100vh;
   color: white;
-  font-size: 46px;
+  font-size: 2.5rem;
 }
 
 #contact-me {
@@ -13,7 +13,7 @@
   justify-content:center;
   margin: 7vh 5vw;
   margin-bottom: 6vh;
-  font-size: 6rem;
+  font-size: 4rem;
   width: 70vw;
 }
 
@@ -73,4 +73,10 @@
     font-size: 1.5rem;
   }
 
+}
+
+@media only screen and (min-width: 2560px) and (min-height: 1440px) {
+  #contact {
+    font-size: 4rem
+  }
 }
