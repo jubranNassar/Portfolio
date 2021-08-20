@@ -7,6 +7,7 @@ import AddProject from "./screens/AddProject/AddProject.jsx";
 import "./App.css";
 import Home from "./screens/Home/Home.jsx";
 import EditProject from "./screens/EditProject/EditProject.jsx";
+import Messages from "./screens/Messages/Messages.jsx";
 import { useEffect } from "react";
 import { verify } from "./services/user";
 import Aos from "aos";
@@ -60,6 +61,9 @@ function App() {
       </Route>
       <Route exact path="/edit/:id">
         <EditProject user={user} setUser={setUser} />
+      </Route>
+      <Route exact path="/contacts">
+        <Messages user={user} />
       </Route>
     </div>
   );

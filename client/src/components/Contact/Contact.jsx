@@ -3,6 +3,7 @@ import { createMessage } from "../../services/contacts";
 import "./Contact.css";
 
 export default function Contact() {
+  const [sent, isSent] = useState(false)
   const [contact, setContact] = useState({
     email: "",
     message: "",
@@ -11,19 +12,24 @@ export default function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setContact({
-      ...setContact,
+      ...contact,
       [name]: value,
     });
   };
 
   const handleSubmit = async (e) => {
-    e.prevent.default();
+    e.preventDefault();
     await createMessage(contact);
+    setContact({
+      email: "",
+      message: "",
+    })
+    isSent(!sent)
   };
 
   return (
     <div data-aos="fade-right" id="contact">
-      <h1 id="contact-me">Contact Me</h1>
+      <h1 id="contact-me">Let's work together!</h1>
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         <div className="label-input">
           <label className="labels" htmlFor="email">
@@ -51,7 +57,7 @@ export default function Contact() {
             className="inputs"
           />
         </div>
-        <button className="contact-button" type="submit">Send</button>
+        <button className="contact-button" type="submit">{sent === true ? "Sent!" : "Send" }</button>
       </form>
     </div>
   );

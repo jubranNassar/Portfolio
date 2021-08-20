@@ -15,6 +15,10 @@ export const deleteMessage = async (id) => {
 };
 
 export const createMessage = async (contactData) => {
-  const res = await api.post("/contacts", { contact: contactData });
-  return res.data;
+  try {
+    const res = await api.post("/contacts", { contact: contactData });
+    return res.data;
+  } catch {
+    return false
+  }
 };

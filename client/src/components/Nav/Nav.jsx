@@ -39,6 +39,9 @@ export default function Nav(props) {
   );
   const authenticated = (
     <>
+    <Link className="links" to="/contacts">
+      Contacts
+    </Link>
       <Link className="links" to="/add">
         Add Project
       </Link>
