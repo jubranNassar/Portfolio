@@ -31,5 +31,11 @@ export default function Messages({ user }) {
       ))}
     </div>
   );
-  return <>{user ? loggedIn : null}</>;
+
+  const notLoggedIn = (
+    <div className="not-logged-in">
+      <h1>Sorry, Not found.</h1>
+    </div>
+  )
+  return <>{user ? loggedIn : notLoggedIn}</>;
 }
