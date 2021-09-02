@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Project.destroy_all
 Skill.destroy_all
-User.destroy_all
 
 
 blogger_app = Project.create!(name: "Blogger_app", image: "https://imgur.com/HKTl8ZU.png", github_url: "https://github.com/jubranNassar/Blogger-App", deployed_url: "https://bloggerapp.netlify.app/", description: "The Blogger-App will allow you to create and upload posts and save them for later.", user: @user )

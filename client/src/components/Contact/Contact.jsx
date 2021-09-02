@@ -42,6 +42,7 @@ export default function Contact() {
             type="email"
             value={contact.email}
             className="inputs"
+            required
           />
         </div>
         <div className="label-input">
@@ -55,6 +56,7 @@ export default function Contact() {
             type="text"
             value={contact.message}
             className="inputs"
+            required
           />
         </div>
         <button className="contact-button" type="submit">{sent === true ? "Sent!" : "Send" }</button>

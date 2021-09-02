@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
-export default function Nav(props) {
+export default function Nav({user, handleLogout}) {
   const alwaysOption = (
     <>
       <a href="/#landing">
         <img
-          className="home-img"
+          className="home-img"  
           src="https://imgur.com/buzW4tI.png"
           alt="Home"
         />
@@ -45,7 +45,7 @@ export default function Nav(props) {
       <Link className="links" to="/add">
         Add Project
       </Link>
-      <button className="links" onClick={props.handleLogout}>
+      <button className="links" onClick={handleLogout}>
         Logout
       </button>
     </>
@@ -53,7 +53,7 @@ export default function Nav(props) {
   return (
     <header className="nav">
       {alwaysOption}
-      {props.user ? authenticated : unauthenticated}
+      {user ? authenticated : unauthenticated}
     </header>
   );
 }
