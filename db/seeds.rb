@@ -15,6 +15,9 @@ blogger_app = Project.create!(name: "Blogger_app", image: "https://imgur.com/HKT
 
 gnome_a_zon = Project.create!(name: "Gnome-A-Zon", image: "https://imgur.com/fmohAeQ.png", github_url: "https://github.com/jubranNassar/Gnome-A-zon", deployed_url: "https://gnome-a-zon.netlify.app/", description: "Gnome-A-Zon is a garden gnome market place. It allows members to add garden gnomes for view/sale. It also allows the original creator to edit the product information. Users can browse garden gnomes and view details. Allows users to become members by signing up; authenticates members on sign in. Built using MERN stack (mongoDB, Express.js, React.js and Node.js) and heroku and netlify.", user: @user)
 
+crypto_info = Project.create!(name: "CryptoInfo", image: "https://imgur.com/wn4ZzLt.png", github_url: "https://github.com/jubranNassar/CryptoInfo", deployed_url: "https://vigorous-aryabhata-76b144.netlify.app", description: "
+  CryptoInfo is a site where you can see how much cryptocurrency is worth in many different worldwide currencies, it also dives into reasons why you should invesnt in cryptocurrency, best websites/apps to invest on, major information about things you should know before investing and best currencies to invest in. CryptoInfo also allows you to search up and retrieve specific data about a certian crypocurrency, which can be used to educate yourself about different crypocurrencies you might be interested in investing in.", user: @user)
+
 pp "#{Project.count} projects created!"
 
 html = Skill.create(name: "HTML", image_url: "https://imgur.com/s8wa8hC.png")
