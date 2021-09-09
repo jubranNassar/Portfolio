@@ -118,5 +118,5 @@ const notLoggedIn = (
     {user ? loggedIn : notLoggedIn }
     </>
 
-  )
+  ) 
 }
