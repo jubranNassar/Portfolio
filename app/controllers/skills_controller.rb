@@ -1,6 +1,5 @@
 class SkillsController < ApplicationController
   before_action :get_skill, only: %i[update destroy]
-  before_action :authorize_request, only: %i[create update destroy]
 
   def index
     render json: Skill.all
@@ -17,7 +16,7 @@ class SkillsController < ApplicationController
 
   def update
     if @skill.update(skill_params)
-      render json: @project
+      render json: @skill
     else
       render json: 'Error, try again'
 
@@ -35,7 +34,7 @@ class SkillsController < ApplicationController
   private
 
   def skill_params
-    params.require(:skill).permit(:name, :image_url)
+    params.require(:skill).permit(:name, :image_url, :user_id)
   end
 
   def get_skill
