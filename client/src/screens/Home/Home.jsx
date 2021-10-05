@@ -9,7 +9,7 @@ export default function Home({ user }) {
   return (
     <div className="home">
       <Landing />
-      <AboutMe />
+      <AboutMe user={user} />
       <Projects user={user} />
       <Contact />
       <Footer />

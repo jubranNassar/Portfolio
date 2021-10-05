@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { getAllSkills } from "../../services/skills";
+import SkillsButtons from "../SkillsButtons/SkillsButtons";
 import "./AboutMe.css";
-export default function AboutMe() {
+export default function AboutMe({ user }) {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
@@ -27,12 +28,18 @@ export default function AboutMe() {
         <h1 className="my-skills">My Skills</h1>
         <div className="skills-container">
           {skills?.map((skill) => (
+            <div className="skill-img-container">
             <img
               className="skills"
               key={skill.id}
               src={skill.image_url}
               alt={skill.name}
             />
+            <SkillsButtons className="buttons"
+            skillID={skill.id}
+            key={skill.id}
+            user={user} />
+            </div>
           ))}
         </div>
       </div>
