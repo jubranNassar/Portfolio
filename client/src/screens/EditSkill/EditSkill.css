@@ -1,0 +1,46 @@
+.skill-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: 36px;
+  color: white;
+}
+
+
+.skill-title {
+  font-size: 100px;
+  justify-self: center;
+}
+
+.skill-input {
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 20vw;
+  padding: 10px;
+}
+
+.skill-label {
+  margin: 10px 0 10px 0;
+}
+
+.skill-label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.skill-edit-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw; 
+}
+
+.skill-edit-button {
+  align-self: center;
+  width: 8vw;
+}

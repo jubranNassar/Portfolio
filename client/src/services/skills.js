@@ -5,6 +5,11 @@ export const getAllSkills = async () => {
   return res.data;
 };
 
+export const getOneSkill = async (skillID) => {
+  const res = await api.get(`/skills/${skillID}`);
+  return res.data;
+};
+
 export const deleteSkill = async (skillID) => {
   const res = await api.delete(`/skills/${skillID}`);
   return res.data;

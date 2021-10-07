@@ -1,8 +1,12 @@
 class SkillsController < ApplicationController
-  before_action :get_skill, only: %i[update destroy]
+  before_action :get_skill, only: %i[show update destroy]
 
   def index
     render json: Skill.all
+  end
+
+  def show
+    render json: @skill
   end
 
   def create
@@ -34,7 +38,7 @@ class SkillsController < ApplicationController
   private
 
   def skill_params
-    params.require(:skill).permit(:name, :image_url, :user_id)
+    params.require(:skill).permit(:name, :image_url)
   end
 
   def get_skill
