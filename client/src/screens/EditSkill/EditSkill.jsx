@@ -19,8 +19,7 @@ export default function EditSkill({ user }) {
     };
     fetchSkill();
   }, [id]);
-  
-  console.log(formData)
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
