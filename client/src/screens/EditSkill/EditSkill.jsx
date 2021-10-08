@@ -87,10 +87,14 @@ export default function EditSkill({ user }) {
   );
 
   const notLoggedIn = (
-    <>
-      <h1>Sorry, Not found.</h1>
-    </>
+    <div className="error-outer">
+      <h1 className="skills-error">Sorry, Not found.</h1>
+    </div>
   );
 
-  return <>{user ? loggedIn : notLoggedIn}</>;
+  return (
+  <>
+  {user ? loggedIn : notLoggedIn}
+  </>
+  );
 }
