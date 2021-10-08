@@ -38,6 +38,7 @@
   width: 45vw;
   margin: 6px;
   padding-left: 2px;
+  box-shadow: 5px 10px 10px rgb(255 255 255 / 30%), 5px 10px 10px rgb(255 255 255 / 22%);
 }
 
 

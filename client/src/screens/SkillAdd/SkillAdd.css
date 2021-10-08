@@ -19,7 +19,7 @@
 }
 
 .skill-add-input {
-  box-shadow: 3px 5px 5px grey;
+  box-shadow: 5px 10px 10px rgb(255 255 255 / 30%), 5px 10px 10px rgb(255 255 255 / 22%);
 }
 
 .skill-add-form {
