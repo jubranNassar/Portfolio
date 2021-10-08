@@ -1,0 +1,40 @@
+.skill-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 36px;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.skill-add-label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-add-label {
+  margin: 20px 0;
+}
+
+.skill-add-input {
+  box-shadow: 3px 5px 5px grey;
+}
+
+.skill-add-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-add-button {
+  margin: 20px 0;
+  justify-self: center;
+}
+
+.skill-add-title {
+  font-size: 100px;
+  margin-bottom: 20px;
+}

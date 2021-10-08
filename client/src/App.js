@@ -7,6 +7,7 @@ import EditProject from "./screens/EditProject/EditProject.jsx";
 import Messages from "./screens/Messages/Messages.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 import EditSkill from "./screens/EditSkill/EditSkill.jsx";
+import SkillAdd from "./screens/SkillAdd/SkillAdd.jsx";
 import { login, logout, verify } from "./services/user";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -67,6 +68,9 @@ function App() {
       <Route exact path="/skills/edit/:id">
         <EditSkill user
         ={user}/>
+      </Route>
+      <Route exact path="/add/skill">
+        <SkillAdd user={user}/>
       </Route>
     </div>
   );
