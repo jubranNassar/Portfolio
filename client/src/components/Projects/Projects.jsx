@@ -31,7 +31,6 @@ export default function Projects({ user }) {
             </div>
             <div className="buttons">
               <ProjectButtons
-                className="buttons"
                 deployedURL={project.deployed_url}
                 githubURL={project.github_url}
                 user={user}
