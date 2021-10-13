@@ -109,9 +109,9 @@
   }
 
   .image-desc {
+    display: none;
     width: 60vw;
     height: 11vh;
-    overflow-y: scroll;
   }
 
   .buttons {
