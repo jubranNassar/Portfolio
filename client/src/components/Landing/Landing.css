@@ -1,12 +1,12 @@
 #landing {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   min-height: 100vh;
-  margin: 50px;
-  margin-top: 20px;
-  margin-left: 70px;
+  max-height: 100vh;
   color: white;
   font-size: 7vw;
+  padding-left: 50px;
 }
 
 
