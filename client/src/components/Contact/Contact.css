@@ -1,20 +1,18 @@
 #contact {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   padding-top: 50px;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
   color: white;
   font-size: 2.5rem;
 }
 
 #contact-me {
-  display: flex;
-  justify-content:center;
-  margin: 7vh 5vw;
-  margin-bottom: 6vh;
   font-size: 4rem;
-  width: 70vw;
+  margin-bottom: 6vh;
 }
 
 .form {
@@ -58,7 +56,7 @@
   }
 
   #contact-me {
-    font-size: 50px;
+    font-size: 2.5rem;
   }
 
   .inputs {
