@@ -1,16 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 Project.destroy_all
 Skill.destroy_all
 User.destroy_all
 
 
-@user = User.create!(username:"jubran", password:"Jubran123")
 blogger_app = Project.create!(name: "Blogger_app", image: "https://imgur.com/HKTl8ZU.png", github_url: "https://github.com/jubranNassar/Blogger-App", deployed_url: "https://bloggerapp.netlify.app/", description: "The Blogger-App will allow you to create and upload posts and save them for later.", user: @user )
 
 gnome_a_zon = Project.create!(name: "Gnome-A-Zon", image: "https://imgur.com/fmohAeQ.png", github_url: "https://github.com/jubranNassar/Gnome-A-zon", deployed_url: "https://gnome-a-zon.netlify.app/", description: "Gnome-A-Zon is a garden gnome market place. It allows members to add garden gnomes for view/sale. It also allows the original creator to edit the product information. Users can browse garden gnomes and view details. Allows users to become members by signing up; authenticates members on sign in. Built using MERN stack (mongoDB, Express.js, React.js and Node.js) and heroku and netlify.", user: @user)
