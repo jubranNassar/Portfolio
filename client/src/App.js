@@ -33,6 +33,7 @@ function App() {
       setUser(currentUser);
     };
     Aos.init({ duration: 1500 });
+    Aos.init({disable: 'mobile'});
     reverify();
   }, []);
 

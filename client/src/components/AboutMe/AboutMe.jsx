@@ -29,14 +29,13 @@ export default function AboutMe({ user }) {
         <div className="skills-container">
           {skills?.map((skill) => (
             <div className="skill-img-container" key={skill.id}>
-            <img
-              className="skills"
-              src={skill.image_url}
-              alt={skill.name}
-            />
-            <SkillsButtons className="buttons"
-            skillID={skill.id}
-            user={user} />
+              <img className="skills" src={skill.image_url} alt={skill.name} />
+              <h1 className="skill-name">{skill.name}</h1>
+              <SkillsButtons
+                className="buttons"
+                skillID={skill.id}
+                user={user}
+              />
             </div>
           ))}
         </div>
