@@ -49,3 +49,4 @@ class UsersController < ApplicationController
     JWT.encode(payload, SECRET_KEY)
   end
 end
+
