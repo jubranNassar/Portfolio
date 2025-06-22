@@ -4,11 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.2.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.4'
+gem 'rails', '~> 8.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.5', '>= 1.5.9'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 6.4', '>= 6.4.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -40,4 +40,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'lograge'
 
 gem 'nokogiri', '~> 1.18', '>= 1.18.8'
-
+gem 'concurrent-ruby', '~> 1.3', '>= 1.3.5'
+gem 'rack', '~> 2.2', '>= 2.2.4'
