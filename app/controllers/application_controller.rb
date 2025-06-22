@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
+  # SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
   # authorize
   def authorize_request
@@ -21,6 +21,6 @@ class ApplicationController < ActionController::API
   private
 
   def decode_token token
-    JWT.decode(token, SECRET_KEY)
+    JWT.decode(token, SECRET_KEY_BASE)
   end
 end
