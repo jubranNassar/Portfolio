@@ -46,7 +46,7 @@ class UsersController < ApplicationController
 
   def create_token(user_id)
     payload = { id: user_id, exp: 24.hours.from_now.to_i }
-    JWT.encode(payload, SECRET_KEY_BASE)
+    JWT.encode(payload, SECRET_KEY)
   end
 end
 
